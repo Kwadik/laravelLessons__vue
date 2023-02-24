@@ -45,4 +45,7 @@ https://www.youtube.com/watch?v=sUyXV8kD3-0
 ## Javascript и Vuejs для Laravel 11. Вычисляемые свойства computed во vue js доступным языком
 https://www.youtube.com/watch?v=RyIoWDDFPe4
 
+## Javascript и Vuejs для Laravel 12. Директива v-for во vuejs. Отображаем массив данных в template
+https://www.youtube.com/watch?v=UMxdrehfoP8
+
 
