@@ -48,4 +48,7 @@ https://www.youtube.com/watch?v=RyIoWDDFPe4
 ## Javascript и Vuejs для Laravel 12. Директива v-for во vuejs. Отображаем массив данных в template
 https://www.youtube.com/watch?v=UMxdrehfoP8
 
+## Javascript и Vuejs для Laravel 13. Директива v-if в vuejs. А также метод filter для массивов js
+https://www.youtube.com/watch?v=fUiuKGPI4LQ
+
 
