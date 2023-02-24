@@ -42,4 +42,7 @@ https://www.youtube.com/watch?v=M0p73wzc2DU
 ## Javascript и Vuejs для Laravel 10. Свойство methods в vue. Создаем методы внутри компонента vuejs
 https://www.youtube.com/watch?v=sUyXV8kD3-0
 
+## Javascript и Vuejs для Laravel 11. Вычисляемые свойства computed во vue js доступным языком
+https://www.youtube.com/watch?v=RyIoWDDFPe4
+
 
