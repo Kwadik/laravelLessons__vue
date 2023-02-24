@@ -51,4 +51,7 @@ https://www.youtube.com/watch?v=UMxdrehfoP8
 ## Javascript и Vuejs для Laravel 13. Директива v-if в vuejs. А также метод filter для массивов js
 https://www.youtube.com/watch?v=fUiuKGPI4LQ
 
+## Javascript и Vuejs для Laravel 14. Axios c Vuejs и Laravel. Метод Mounted во Vuejs
+https://www.youtube.com/watch?v=g4aZDr-1ITs
+
 
