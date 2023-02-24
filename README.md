@@ -27,5 +27,6 @@ php artisan ui vue
 
 npm run dev (дважды там надо, после инсталла vue-loader)
 
-
+## Javascript и Vuejs для Laravel 6. Создаем первый компонент Vue. Разбираем файл app.js и меняем его
+https://www.youtube.com/watch?v=DZPqJ0jbsG4
 
