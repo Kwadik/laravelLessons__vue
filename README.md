@@ -36,4 +36,7 @@ https://www.youtube.com/watch?v=Po1_Nzu-VpM
 ## Javascript и Vuejs для Laravel 8. import компонента в компонент. Вложенная структура компонентов Vue
 https://www.youtube.com/watch?v=BcXyayUwT-8
 
+## Javascript и Vuejs для Laravel 9. Свойство data() у компонента vuejs. Создаем переменные
+https://www.youtube.com/watch?v=M0p73wzc2DU
+
 
