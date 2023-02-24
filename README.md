@@ -39,4 +39,7 @@ https://www.youtube.com/watch?v=BcXyayUwT-8
 ## Javascript и Vuejs для Laravel 9. Свойство data() у компонента vuejs. Создаем переменные
 https://www.youtube.com/watch?v=M0p73wzc2DU
 
+## Javascript и Vuejs для Laravel 10. Свойство methods в vue. Создаем методы внутри компонента vuejs
+https://www.youtube.com/watch?v=sUyXV8kD3-0
+
 
