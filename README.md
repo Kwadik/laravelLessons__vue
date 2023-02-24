@@ -33,4 +33,7 @@ https://www.youtube.com/watch?v=DZPqJ0jbsG4
 ## Javascript и Vuejs для Laravel 7. Разбираем структуру компонента Vue и знакомимся с Vuejs devtools
 https://www.youtube.com/watch?v=Po1_Nzu-VpM
 
+## Javascript и Vuejs для Laravel 8. import компонента в компонент. Вложенная структура компонентов Vue
+https://www.youtube.com/watch?v=BcXyayUwT-8
+
 
