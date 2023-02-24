@@ -30,3 +30,7 @@ npm run dev (дважды там надо, после инсталла vue-loade
 ## Javascript и Vuejs для Laravel 6. Создаем первый компонент Vue. Разбираем файл app.js и меняем его
 https://www.youtube.com/watch?v=DZPqJ0jbsG4
 
+## Javascript и Vuejs для Laravel 7. Разбираем структуру компонента Vue и знакомимся с Vuejs devtools
+https://www.youtube.com/watch?v=Po1_Nzu-VpM
+
+
