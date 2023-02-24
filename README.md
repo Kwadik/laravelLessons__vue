@@ -13,4 +13,19 @@ https://www.youtube.com/watch?v=qXmaDXt1xxA
 ## Javascript и Vuejs для Laravel 5. Создаем проект laravel. Подключаем vue js к laravel и делаем микс
 https://www.youtube.com/watch?v=NvhTW0l7AV0
 
+npm install && npm run dev (сделал через cmd администратором..)
+
+php artisan migrate
+
+composer require laravel/ui
+
+php artisan ui bootstrap
+
+php artisan ui:auth
+
+php artisan ui vue
+
+npm run dev (дважды там надо, после инсталла vue-loader)
+
+
 
