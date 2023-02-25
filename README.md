@@ -98,4 +98,7 @@ https://www.youtube.com/watch?v=1r2fl3AcFco
 ## Javascript и Vuejs для Laravel 26. CRUD в SPA приложении. Форма добавления, добавление и редирект
 https://www.youtube.com/watch?v=gJgtKlIjA18
 
+## Javascript и Vuejs для Laravel 27. CRUD в SPA приложении. Получение списка персон
+https://www.youtube.com/watch?v=oHplCFiNb6k
+
 
