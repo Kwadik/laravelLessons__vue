@@ -54,4 +54,12 @@ https://www.youtube.com/watch?v=fUiuKGPI4LQ
 ## Javascript и Vuejs для Laravel 14. Axios c Vuejs и Laravel. Метод Mounted во Vuejs
 https://www.youtube.com/watch?v=g4aZDr-1ITs
 
+## Javascript и Vuejs для Laravel 15. Асинхронный CRUD. Создание персоны с помощью axios и v-model
+https://www.youtube.com/watch?v=s9w0BBHjhQ8
+
+php artisan make:model Person -m
+
+php artisan migrate
+
+php artisan make:request Person/StoreRequest
 
