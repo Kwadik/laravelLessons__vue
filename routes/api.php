@@ -23,4 +23,5 @@ Route::group([
     'prefix' => 'people',
 ], function() {
     Route::post('/', 'StoreController');
+    Route::get('/', 'IndexController');
 });

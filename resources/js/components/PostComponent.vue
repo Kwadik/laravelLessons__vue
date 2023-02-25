@@ -1,18 +1,18 @@
 <template>
     <div class="p-5">
         <CreateComponent></CreateComponent>
-        <SinglePostComponent></SinglePostComponent>
+        <IndexComponent></IndexComponent>
     </div>
 </template>
 
 <script>
-import SinglePostComponent from "./SinglePostComponent";
 import CreateComponent from "./CreateComponent";
+import IndexComponent from "./IndexComponent";
 export default {
     name: "PostComponent",
     components: {
-        SinglePostComponent,
         CreateComponent,
+        IndexComponent,
     },
 }
 </script>

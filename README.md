@@ -63,3 +63,7 @@ php artisan migrate
 
 php artisan make:request Person/StoreRequest
 
+## Javascript и Vuejs для Laravel 16. Асинхронный CRUD. Получение списка персон из базы
+https://www.youtube.com/watch?v=NdIwtE8rEJI
+
+
