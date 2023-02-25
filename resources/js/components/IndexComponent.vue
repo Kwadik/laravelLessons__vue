@@ -13,15 +13,8 @@
             </thead>
             <tbody>
             <template v-for="person in people">
-                <tr :class="!isPersonEdit(person.id) ? '' : 'd-none'">
-                    <th scope="row">{{ person.id }}</th>
-                    <td>{{ person.name }}</td>
-                    <td>{{ person.age }}</td>
-                    <td>{{ person.job }}</td>
-                    <td><a @click.prevent="changeEditedPerson(person)" href="#" class="btn btn-success">Edit</a></td>
-                    <td><a @click.prevent="deletePerson(person.id)" href="#" class="btn btn-danger">Delete</a></td>
-                </tr>
                 <EditComponent :person="person" :ref="`edit_${person.id}`"></EditComponent>
+                <ShowComponent :person="person" :ref="`show_${person.id}`"></ShowComponent>
             </template>
             </tbody>
         </table>
@@ -30,6 +23,7 @@
 
 <script>
 import EditComponent from "./EditComponent";
+import ShowComponent from "./ShowComponent";
 export default {
     name: "IndexComponent",
     data() {
@@ -47,24 +41,12 @@ export default {
                 this.people = res.data
             })
         },
-        deletePerson(id) {
-            this.editPersonId = null
-            axios.delete(`/api/people/${id}`).then(res => {
-                this.getPeople()
-            })
-        },
-        changeEditedPerson(person) {
-            this.editPersonId = person.id
-            let componentRef = `edit_${person.id}`
-            this.$refs[componentRef][0].editPersonName = person.name
-            this.$refs[componentRef][0].editPersonAge = person.age
-            this.$refs[componentRef][0].editPersonJob = person.job
-        },
         isPersonEdit(id) {
             return this.editPersonId === id
         },
     },
     components: {
+        ShowComponent,
         EditComponent,
     }
 }

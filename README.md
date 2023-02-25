@@ -84,4 +84,7 @@ https://www.youtube.com/watch?v=L9nmlV94_TQ
 ## Javascript и Vuejs для Laravel 22. Оптимизируем код, используя props, $parent, $refs и $refs в цикле
 https://www.youtube.com/watch?v=pxAktdGPQzI
 
+## Javascript и Vuejs для Laravel 23. Доделываем оптимизацию с props, $parent, $refs и $refs в цикле
+https://www.youtube.com/watch?v=HxMV9E9Vz1M
+
 
