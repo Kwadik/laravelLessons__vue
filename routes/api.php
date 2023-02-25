@@ -24,6 +24,7 @@ Route::group([
 ], function() {
     Route::post('/', 'StoreController');
     Route::get('/', 'IndexController');
+    Route::get('/{person}', 'ShowController');
     Route::patch('/{person}', 'UpdateController');
     Route::delete('/{person}', 'DeleteController');
 });
