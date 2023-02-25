@@ -118,4 +118,9 @@ php artisan make:resource Person/PersonResource
 ## Javascript и Vuejs для Laravel 32. Жизненный цикл приложения(экземпляра) Vue. Как устроен Vue
 https://www.youtube.com/watch?v=rEcYdQG72Zc
 
+## Javascript и Vuejs для Laravel 33. Что такое Vuex? Подключение Vuex к проекту Laravel
+https://www.youtube.com/watch?v=Wo3ht9VmvaE
+
+npm install vuex@3.0 --save (свежая не подошла)
+
 
