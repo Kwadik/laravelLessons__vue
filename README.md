@@ -114,3 +114,8 @@ https://www.youtube.com/watch?v=1tEGtGqGq3A
 https://www.youtube.com/watch?v=CWRVLo5KAeo
 
 php artisan make:resource Person/PersonResource
+
+## Javascript и Vuejs для Laravel 32. Жизненный цикл приложения(экземпляра) Vue. Как устроен Vue
+https://www.youtube.com/watch?v=rEcYdQG72Zc
+
+
