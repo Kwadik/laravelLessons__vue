@@ -78,4 +78,7 @@ https://www.youtube.com/watch?v=yljSuUOzFfQ
 ## Javascript и Vuejs для Laravel 20. Использование методов и свойств других компонентов Vue
 https://www.youtube.com/watch?v=c0FKOsT8Bvs
 
+## Javascript и Vuejs для Laravel 21. Прокидываем атрибуты в дочерний компонент с помощью массива props
+https://www.youtube.com/watch?v=L9nmlV94_TQ
+
 
