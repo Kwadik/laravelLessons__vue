@@ -75,4 +75,7 @@ https://www.youtube.com/watch?v=wpxq0PtHOvI
 ## Javascript и Vuejs для Laravel 19. Асинхронный CRUD. Удаление персоны из бд при помощи axios
 https://www.youtube.com/watch?v=yljSuUOzFfQ
 
+## Javascript и Vuejs для Laravel 20. Использование методов и свойств других компонентов Vue
+https://www.youtube.com/watch?v=c0FKOsT8Bvs
+
 
