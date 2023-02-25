@@ -66,4 +66,7 @@ php artisan make:request Person/StoreRequest
 ## Javascript и Vuejs для Laravel 16. Асинхронный CRUD. Получение списка персон из базы
 https://www.youtube.com/watch?v=NdIwtE8rEJI
 
+## Javascript и Vuejs для Laravel 17. Асинхронный CRUD. Обновление персоны. #1 Переключатель на форму
+https://www.youtube.com/watch?v=k5Ab0mo3f7o
+
 
