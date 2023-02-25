@@ -21,13 +21,7 @@
                     <td><a @click.prevent="changeEditedPerson(person)" href="#" class="btn btn-success">Edit</a></td>
                     <td><a @click.prevent="deletePerson(person.id)" href="#" class="btn btn-danger">Delete</a></td>
                 </tr>
-                <tr :class="isPersonEdit(person.id) ? '' : 'd-none'">
-                    <th scope="row">{{ person.id }}</th>
-                    <td><input v-model="editPersonName" type="text" class="form-control"></td>
-                    <td><input v-model="editPersonAge" type="number" class="form-control"></td>
-                    <td><input v-model="editPersonJob" type="text" class="form-control"></td>
-                    <td><a @click.prevent="updatePerson(person.id)" href="#" class="btn btn-success">Update</a></td>
-                </tr>
+                <EditComponent :person="person" :ref="`edit_${person.id}`"></EditComponent>
             </template>
             </tbody>
         </table>
@@ -35,15 +29,13 @@
 </template>
 
 <script>
+import EditComponent from "./EditComponent";
 export default {
     name: "IndexComponent",
     data() {
         return {
             people: null,
             editPersonId: null,
-            editPersonName: '',
-            editPersonAge: null,
-            editPersonJob: '',
         }
     },
     mounted() {
@@ -55,16 +47,6 @@ export default {
                 this.people = res.data
             })
         },
-        updatePerson(id) {
-            this.editPersonId = null
-            axios.patch(`/api/people/${id}`, {
-                name: this.editPersonName,
-                age: this.editPersonAge,
-                job: this.editPersonJob,
-            }).then(res => {
-                this.getPeople()
-            })
-        },
         deletePerson(id) {
             this.editPersonId = null
             axios.delete(`/api/people/${id}`).then(res => {
@@ -73,14 +55,18 @@ export default {
         },
         changeEditedPerson(person) {
             this.editPersonId = person.id
-            this.editPersonName = person.name
-            this.editPersonAge = person.age
-            this.editPersonJob = person.job
+            let componentRef = `edit_${person.id}`
+            this.$refs[componentRef][0].editPersonName = person.name
+            this.$refs[componentRef][0].editPersonAge = person.age
+            this.$refs[componentRef][0].editPersonJob = person.job
         },
         isPersonEdit(id) {
             return this.editPersonId === id
         },
     },
+    components: {
+        EditComponent,
+    }
 }
 </script>
 

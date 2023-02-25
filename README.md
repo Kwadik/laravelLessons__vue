@@ -81,4 +81,7 @@ https://www.youtube.com/watch?v=c0FKOsT8Bvs
 ## Javascript и Vuejs для Laravel 21. Прокидываем атрибуты в дочерний компонент с помощью массива props
 https://www.youtube.com/watch?v=L9nmlV94_TQ
 
+## Javascript и Vuejs для Laravel 22. Оптимизируем код, используя props, $parent, $refs и $refs в цикле
+https://www.youtube.com/watch?v=pxAktdGPQzI
+
 

@@ -35,9 +35,8 @@ export default {
                 this.name = null
                 this.age = null
                 this.job = null
-                console.log(res);
+                this.$parent.$refs.index.getPeople();
             })
-            //console.log(this.name, this.age, this.job);
         },
     },
 }
