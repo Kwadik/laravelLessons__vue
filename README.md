@@ -69,4 +69,7 @@ https://www.youtube.com/watch?v=NdIwtE8rEJI
 ## Javascript и Vuejs для Laravel 17. Асинхронный CRUD. Обновление персоны. #1 Переключатель на форму
 https://www.youtube.com/watch?v=k5Ab0mo3f7o
 
+## Javascript и Vuejs для Laravel 18. Асинхронный CRUD. Обновление персоны. #2 Axios запрос обновление
+https://www.youtube.com/watch?v=wpxq0PtHOvI
+
 

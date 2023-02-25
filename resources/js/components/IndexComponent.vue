@@ -12,19 +12,19 @@
             </thead>
             <tbody>
             <template v-for="person in people">
-                <tr>
+                <tr :class="!isPersonEdit(person.id) ? '' : 'd-none'">
                     <th scope="row">{{ person.id }}</th>
                     <td>{{ person.name }}</td>
                     <td>{{ person.age }}</td>
                     <td>{{ person.job }}</td>
-                    <td><a @click.prevent="changeEditPersonId(person.id)" href="#" class="btn btn-success">Edit</a></td>
+                    <td><a @click.prevent="changeEditedPerson(person)" href="#" class="btn btn-success">Edit</a></td>
                 </tr>
                 <tr :class="isPersonEdit(person.id) ? '' : 'd-none'">
                     <th scope="row">{{ person.id }}</th>
-                    <td><input type="text" class="form-control"></td>
-                    <td><input type="number" class="form-control"></td>
-                    <td><input type="text" class="form-control"></td>
-                    <td><a @click.prevent="changeEditPersonId(null)" href="#" class="btn btn-success">Update</a></td>
+                    <td><input v-model="editPersonName" type="text" class="form-control"></td>
+                    <td><input v-model="editPersonAge" type="number" class="form-control"></td>
+                    <td><input v-model="editPersonJob" type="text" class="form-control"></td>
+                    <td><a @click.prevent="updatePerson(person.id)" href="#" class="btn btn-success">Update</a></td>
                 </tr>
             </template>
             </tbody>
@@ -39,6 +39,9 @@ export default {
         return {
             people: null,
             editPersonId: null,
+            editPersonName: '',
+            editPersonAge: null,
+            editPersonJob: '',
         }
     },
     mounted() {
@@ -50,8 +53,21 @@ export default {
                 this.people = res.data
             })
         },
-        changeEditPersonId(id) {
-            this.editPersonId = id
+        updatePerson(editPersonId) {
+            this.editPersonId = null
+            axios.patch(`/api/people/${editPersonId}`, {
+                name: this.editPersonName,
+                age: this.editPersonAge,
+                job: this.editPersonJob,
+            }).then(res => {
+                this.getPeople()
+            })
+        },
+        changeEditedPerson(person) {
+            this.editPersonId = person.id
+            this.editPersonName = person.name
+            this.editPersonAge = person.age
+            this.editPersonJob = person.job
         },
         isPersonEdit(id) {
             return this.editPersonId === id
