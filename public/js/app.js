@@ -5374,15 +5374,22 @@ __webpack_require__.r(__webpack_exports__);
         _this.people = res.data;
       });
     },
-    updatePerson: function updatePerson(editPersonId) {
+    updatePerson: function updatePerson(id) {
       var _this2 = this;
       this.editPersonId = null;
-      axios.patch("/api/people/".concat(editPersonId), {
+      axios.patch("/api/people/".concat(id), {
         name: this.editPersonName,
         age: this.editPersonAge,
         job: this.editPersonJob
       }).then(function (res) {
         _this2.getPeople();
+      });
+    },
+    deletePerson: function deletePerson(id) {
+      var _this3 = this;
+      this.editPersonId = null;
+      axios["delete"]("/api/people/".concat(id)).then(function (res) {
+        _this3.getPeople();
       });
     },
     changeEditedPerson: function changeEditedPerson(person) {
@@ -5569,7 +5576,18 @@ var render = function render() {
           return _vm.changeEditedPerson(person);
         }
       }
-    }, [_vm._v("Edit")])])]), _vm._v(" "), _c("tr", {
+    }, [_vm._v("Edit")])]), _vm._v(" "), _c("td", [_c("a", {
+      staticClass: "btn btn-danger",
+      attrs: {
+        href: "#"
+      },
+      on: {
+        click: function click($event) {
+          $event.preventDefault();
+          return _vm.deletePerson(person.id);
+        }
+      }
+    }, [_vm._v("Delete")])])]), _vm._v(" "), _c("tr", {
       "class": _vm.isPersonEdit(person.id) ? "" : "d-none"
     }, [_c("th", {
       attrs: {
@@ -5672,7 +5690,11 @@ var staticRenderFns = [function () {
     attrs: {
       scope: "col"
     }
-  }, [_vm._v("Edit")])])]);
+  }, [_vm._v("Edit")]), _vm._v(" "), _c("th", {
+    attrs: {
+      scope: "col"
+    }
+  }, [_vm._v("Delete")])])]);
 }];
 render._withStripped = true;
 

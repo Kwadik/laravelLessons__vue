@@ -72,4 +72,7 @@ https://www.youtube.com/watch?v=k5Ab0mo3f7o
 ## Javascript и Vuejs для Laravel 18. Асинхронный CRUD. Обновление персоны. #2 Axios запрос обновление
 https://www.youtube.com/watch?v=wpxq0PtHOvI
 
+## Javascript и Vuejs для Laravel 19. Асинхронный CRUD. Удаление персоны из бд при помощи axios
+https://www.youtube.com/watch?v=yljSuUOzFfQ
+
 

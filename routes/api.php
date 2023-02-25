@@ -25,4 +25,5 @@ Route::group([
     Route::post('/', 'StoreController');
     Route::get('/', 'IndexController');
     Route::patch('/{person}', 'UpdateController');
+    Route::delete('/{person}', 'DeleteController');
 });
