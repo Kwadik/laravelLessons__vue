@@ -6,6 +6,7 @@
                 <th scope="col">Name</th>
                 <th scope="col">Age</th>
                 <th scope="col">Job</th>
+                <th scope="col">Edit</th>
             </tr>
             </thead>
             <tbody>
@@ -14,6 +15,14 @@
                     <td>{{ person.name }}</td>
                     <td>{{ person.age }}</td>
                     <td>{{ person.job }}</td>
+                    <td>
+                        <router-link :to="{
+                            name: 'person.edit',
+                            params: {
+                                id: person.id,
+                            }
+                        }">Edit</router-link>
+                    </td>
                 </tr>
             </template>
             </tbody>

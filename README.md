@@ -104,4 +104,7 @@ https://www.youtube.com/watch?v=oHplCFiNb6k
 ## Javascript и Vuejs для Laravel 28. CRUD в SPA. Edit компонент и динамичные параметры в vue router
 https://www.youtube.com/watch?v=Nd5D_if9Ilo
 
+## Javascript и Vuejs для Laravel 29. CRUD в SPA. Страница персоны. Редирект с динамичным параметром
+https://www.youtube.com/watch?v=9FywbfgBIlw
+
 

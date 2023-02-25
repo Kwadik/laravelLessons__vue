@@ -45,7 +45,12 @@ export default {
                 age: this.age,
                 job: this.job,
             }).then(res => {
-                router.push({name: 'person.show'})
+                router.push({
+                    name: 'person.show',
+                    params: {
+                        id: this.$route.params.id,
+                    },
+                })
             })
         },
     },

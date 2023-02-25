@@ -35,6 +35,7 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     update: function update(id) {
+      var _this2 = this;
       this.editPersonId = null;
       axios.patch("/api/people/".concat(this.$route.params.id), {
         name: this.name,
@@ -42,7 +43,10 @@ __webpack_require__.r(__webpack_exports__);
         job: this.job
       }).then(function (res) {
         _router__WEBPACK_IMPORTED_MODULE_0__["default"].push({
-          name: 'person.show'
+          name: 'person.show',
+          params: {
+            id: _this2.$route.params.id
+          }
         });
       });
     }
