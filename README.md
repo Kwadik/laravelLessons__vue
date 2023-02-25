@@ -107,4 +107,5 @@ https://www.youtube.com/watch?v=Nd5D_if9Ilo
 ## Javascript и Vuejs для Laravel 29. CRUD в SPA. Страница персоны. Редирект с динамичным параметром
 https://www.youtube.com/watch?v=9FywbfgBIlw
 
-
+## Javascript и Vuejs для Laravel 30. CRUD в SPA. Удаление персоны с помощью axios
+https://www.youtube.com/watch?v=1tEGtGqGq3A
