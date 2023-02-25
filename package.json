@@ -24,6 +24,7 @@
     },
     "dependencies": {
         "laravel-mix": "^6.0.49",
+        "vue-router": "^3.5.3",
         "watch": "^0.13.0"
     }
 }

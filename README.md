@@ -87,4 +87,7 @@ https://www.youtube.com/watch?v=pxAktdGPQzI
 ## Javascript и Vuejs для Laravel 23. Доделываем оптимизацию с props, $parent, $refs и $refs в цикле
 https://www.youtube.com/watch?v=HxMV9E9Vz1M
 
+## Javascript и Vuejs для Laravel 24. Подключаем Vue Router в Laravel. Первые роуты и SPA приложение
+https://www.youtube.com/watch?v=EvlmWOld4TQ
 
+npm install vue-router@3.5.3 (свежая не подошла)
