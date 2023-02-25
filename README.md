@@ -95,4 +95,7 @@ npm install vue-router@3.5.3 (свежая не подошла)
 ## Javascript и Vuejs для Laravel 25. CRUD в SPA приложении. Структура папок. Стрелочные функции
 https://www.youtube.com/watch?v=1r2fl3AcFco
 
+## Javascript и Vuejs для Laravel 26. CRUD в SPA приложении. Форма добавления, добавление и редирект
+https://www.youtube.com/watch?v=gJgtKlIjA18
+
 
