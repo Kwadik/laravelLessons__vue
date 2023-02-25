@@ -109,3 +109,8 @@ https://www.youtube.com/watch?v=9FywbfgBIlw
 
 ## Javascript и Vuejs для Laravel 30. CRUD в SPA. Удаление персоны с помощью axios
 https://www.youtube.com/watch?v=1tEGtGqGq3A
+
+## Javascript и Vuejs для Laravel 31. SPA приложение. Работа с api resource. Валидация для пустых полей
+https://www.youtube.com/watch?v=CWRVLo5KAeo
+
+php artisan make:resource Person/PersonResource

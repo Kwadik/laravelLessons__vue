@@ -11,8 +11,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../router */ "./resources/js/router.js");
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "Edit",
   data: function data() {
@@ -25,13 +23,18 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     this.getPerson();
   },
+  computed: {
+    isDisabled: function isDisabled() {
+      return this.name && this.age && this.job;
+    }
+  },
   methods: {
     getPerson: function getPerson() {
       var _this = this;
       axios.get("/api/people/".concat(this.$route.params.id)).then(function (res) {
-        _this.name = res.data.name;
-        _this.age = res.data.age;
-        _this.job = res.data.job;
+        _this.name = res.data.data.name;
+        _this.age = res.data.data.age;
+        _this.job = res.data.data.job;
       });
     },
     update: function update(id) {
@@ -42,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
         age: this.age,
         job: this.job
       }).then(function (res) {
-        _router__WEBPACK_IMPORTED_MODULE_0__["default"].push({
+        _this2.$router.push({
           name: 'person.show',
           params: {
             id: _this2.$route.params.id
@@ -148,6 +151,7 @@ var render = function render() {
   }, [_c("input", {
     staticClass: "btn btn-primary",
     attrs: {
+      disabled: !_vm.isDisabled,
       type: "submit",
       value: "Update"
     },
