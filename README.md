@@ -91,3 +91,8 @@ https://www.youtube.com/watch?v=HxMV9E9Vz1M
 https://www.youtube.com/watch?v=EvlmWOld4TQ
 
 npm install vue-router@3.5.3 (свежая не подошла)
+
+## Javascript и Vuejs для Laravel 25. CRUD в SPA приложении. Структура папок. Стрелочные функции
+https://www.youtube.com/watch?v=1r2fl3AcFco
+
+

@@ -9,12 +9,9 @@ export default new VueRouter({
     mode: 'history',
     routes: [
         {
-            path: '/posts',
-            component: PostComponent,
-        },
-        {
-            path: '/tags',
-            component: TagComponent,
+            path: '/people',
+            name: 'person.index',
+            component: () => import('./components/Person/Index'),
         },
     ],
 })
