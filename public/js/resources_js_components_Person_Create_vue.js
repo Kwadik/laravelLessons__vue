@@ -25,20 +25,7 @@ __webpack_require__.r(__webpack_exports__);
       return this.name && this.age && this.job;
     }
   },
-  methods: {
-    store: function store() {
-      var _this = this;
-      axios.post('/api/people', {
-        name: this.name,
-        age: this.age,
-        job: this.job
-      }).then(function (res) {
-        _this.$router.push({
-          name: 'person.index'
-        });
-      });
-    }
-  }
+  methods: {}
 });
 
 /***/ }),
@@ -143,7 +130,11 @@ var render = function render() {
     on: {
       click: function click($event) {
         $event.preventDefault();
-        return _vm.store.apply(null, arguments);
+        return _vm.$store.dispatch("storePerson", {
+          name: _vm.name,
+          age: _vm.age,
+          job: _vm.job
+        });
       }
     }
   })])]);

@@ -126,4 +126,7 @@ npm install vuex@3.0 --save (свежая не подошла)
 ## Javascript и Vuejs для Laravel 34. Vuex, state, actions, getters, mutations. Show компонент с Vuex
 https://www.youtube.com/watch?v=B2dCQ-FhsO8
 
+## Javascript и Vuejs для Laravel 35. Реализуем edit, create, index компоненты с Vuex
+https://www.youtube.com/watch?v=w_pcpzzWeB4
+
 
